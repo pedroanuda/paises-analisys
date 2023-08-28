@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Países Analisys</title>
+</head>
+<body>
+    <section class="secao">
+        <div class="omgbox opcoes-container">
+            <div class="searchbar">
+                <input id="pesquisa" placeholder="Pesquisar" class="opcoes__search">
+            </div>
+            <div class="selections">
+                <div class="opcoes__field">
+                    <label for="search_for">Pesquisar por</label>
+                    <select id="search_for" class="opcoes__select">
+                        <option selected value="nome">Nome</option>
+                        <option value="capital">Capital</option>
+                        <option value="moeda">Moeda</option>
+                        <option value="continente">Continente</option>
+                        <option value="idioma">Idiomas</option>
+                        <option value="fronteiras">Fronteiras</option>
+                    </select>
+                </div>
+                <div class="opcoes__field">
+                    <label for="order_by">Ordenar por</label>
+                    <select id="order_by" class="opcoes__select">
+                        <option value="nome_crescente">Nome (A-Z)</option>
+                        <option value="nome_decrescente">Nome (Z-A)</option>
+                        <option value="area_crescente">Área (Crescente)</option>
+                        <option value="area_decrescente">Área (Decrescente)</option>
+                        <option value="populacao_crescente">População (Crescente)</option>
+                        <option value="populacao_decrescente">População (Decrescente)</option>
+                        <option value="gini_crescente">Gini (Crescente)</option>
+                        <option value="gini_decrescente">Gini (Decrescente)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="omgbox tabela-container">
+            <table>
+                <thead>
+                    <th>Bandeira</th>
+                    <th>País</th>
+                    <th>Capital</th>
+                    <th>Área</th>
+                    <th>População</th>
+                    <th>Moeda</th>
+                    <th>Continente</th>
+                    <th>Gini</th>
+                    <th>Idioma</th>
+                    <th>Fronteiras</th>
+                    <th>Fuso horário</th>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div class="feedback">Carregando...</div>
+        </div>
+    </section>
+    <section class="secao sobre">
+        <img src="https://github.com/pedroanuda.png">
+        <div>
+            <h3>Pedro Anuda</h3>
+            <span>Criador</span>
+        </div>
+        <a target="_blank" href="https://github.com/pedroanuda">Ver meu GitHub</a>
+    </section>
+    <dialog class="dialogo">
+        <h3 class="dialogo__title"></h3>
+        <div class="dialogo__conteudo"></div>
+        <button class="fechar-dialogo">Fechar</button>
+    </dialog>
+</body>
+</html>
